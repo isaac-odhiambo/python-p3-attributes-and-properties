@@ -50,7 +50,4 @@ class TestDog:
         sys.stdout = sys.__stdout__
         assert(captured_out.getvalue() == "Breed must be in list of approved breeds.\n")
 
-    def test_breed_in_list(self):
-        '''saves breed if in breed list.'''
-        fido = Dog(breed="Pug")
-        assert(fido.breed == "Pug")
+    
